@@ -1,23 +1,39 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, FlatList } from 'react-native';
+import HerbsList from './components/HerbsList';
 
 export default class App extends React.Component {
+  
   render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
-  }
-}
+    var herbs = [
+      {
+        id: 1,
+        name: 'rumianek' 
+      },
+      {
+        id: 2,
+        name: 'mięta'
+      }, {
+        id: 3,
+        name: 'melisa'
+      }]
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+      return (
+        <View>
+        <Text>Herbopedia</Text>
+          <HerbsList herbsList={herbs}/>
+        </View>
+        
+      );
+    }
+  }
+  
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });
+  
