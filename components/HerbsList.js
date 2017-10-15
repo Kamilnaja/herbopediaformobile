@@ -1,5 +1,6 @@
 import React from 'react';
 import {Text, View, FlatList } from 'react-native';
+import SingleHerbList from "./SingleHerbList";
 
 export default class HerbsList extends React.Component {
 render() {
@@ -9,7 +10,9 @@ render() {
         <View>
           <FlatList
             data={this.props.herbsList}
-            renderItem={({item}) => <Text>id: {item.id} | name: {item.name}</Text>}
+            renderItem={({item}) =>
+              <SingleHerbList {...item}/>
+            }
           />
         </View>
       </View>
