@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View } from 'react-native';
+import {Text, View, FlatList } from 'react-native';
 
 export default class HerbsList extends React.Component {
 render() {
@@ -7,9 +7,10 @@ render() {
     return (
       <View>
         <View>
-          {
-            Object.keys(this.props.herbsList).map((item, idx) => <Text>{this.props.herbsList[idx].name}</Text>)
-          }
+          <FlatList
+            data={this.props.herbsList}
+            renderItem={({item}) => <Text>id: {item.id} | name: {item.name}</Text>}
+          />
         </View>
       </View>
     );
