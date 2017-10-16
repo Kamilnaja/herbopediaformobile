@@ -35,6 +35,9 @@ var styles = StyleSheet.create ({
     display: 'flex',
     paddingLeft: 5,
     height: 50,
-    alignItems: 'center'
+    alignItems: 'center',
   },
+  textItem : {
+    color: 'white'
+  }
 });
