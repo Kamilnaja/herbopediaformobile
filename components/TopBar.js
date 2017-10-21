@@ -8,7 +8,6 @@ import SideMenu from './SideMenu';
 import styles from '../Style';
 export default class TopBar extends Component {
 
-
   render () {
     return (
       <View style={styles.topBar}>
@@ -16,9 +15,10 @@ export default class TopBar extends Component {
         Herbopedia
         </Text>
       <Button
-        title="menu"
+        title=". . ."
         onPress={this.props.toggleMenu.bind(this)}
-        color="darkslategrey"
+        color="cornflowerblue"
+        style={styles.menuBtn}
       />
       </View>
     )

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {
   View,
   Text,
-  FlatList
+  FlatList,
 } from 'react-native'
 import styles from '../Style';
 

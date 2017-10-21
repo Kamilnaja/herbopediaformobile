@@ -11,9 +11,13 @@ export default StyleSheet.create({
     height: 80,
     backgroundColor: 'cornflowerblue',
     width: 100,
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: '100%'
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-end',
+    width: '100%',
+    paddingLeft: 15,
+    paddingRight: 15,
+    paddingBottom: 15
   },
   circle: {
     width: 30,
@@ -47,5 +51,8 @@ export default StyleSheet.create({
     bottom: 0,
     paddingTop: 15,
     paddingLeft: 15,
+  },
+  menuBtn: {
+    
   }
 })
