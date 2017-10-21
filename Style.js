@@ -54,5 +54,9 @@ export default StyleSheet.create({
   },
   menuBtn: {
     
+  },
+  listTitleWrapper: {
+    backgroundColor: "rgba(0, 100, 10, 0.4)",
+    
   }
 })

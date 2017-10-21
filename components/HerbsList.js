@@ -8,9 +8,9 @@ import {
   Button
 } from 'react-native';
 import SingleHerbList from "./SingleHerbList";
+import styles from '../Style';
 
 var debugMode = false;
-
 export default class HerbsList extends React.Component {
   constructor(props) {
     super();
@@ -38,6 +38,11 @@ export default class HerbsList extends React.Component {
         source={require('../img/background.jpg')}
         resizeMode='cover'
       >
+      <View style={styles.listTitleWrapper}>
+        <Text style={{paddingLeft: 15, color: "white"}}>
+          Lista ziół
+        </Text>
+      </View>
       <FlatList
         data={this.state.herbsList}
         renderItem={({item, idx}) =>
