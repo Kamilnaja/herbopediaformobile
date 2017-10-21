@@ -1,30 +1,26 @@
 import React, { Component } from 'react';
 import { 
-  StyleSheet, 
   Text, 
-  View, 
+  View,
+  Button,
 } from 'react-native';
-
+import SideMenu from './SideMenu';
+import styles from '../Style';
 export default class TopBar extends Component {
+
+
   render () {
     return (
       <View style={styles.topBar}>
         <Text style={{color: "white"}}>
         Herbopedia
         </Text>
+      <Button
+        title="menu"
+        onPress={this.props.toggleMenu.bind(this)}
+        color="darkslategrey"
+      />
       </View>
     )
   }
 }
-
-const styles = StyleSheet.create ({
-  topBar: {
-    height: 80,
-    backgroundColor: 'cornflowerblue',
-    width: 100,
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: '100%'
-  }
-})
-

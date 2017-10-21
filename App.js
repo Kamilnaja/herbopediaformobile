@@ -1,33 +1,39 @@
 import React from 'react';
 import { 
-  StyleSheet, 
   Text, 
   View, 
   FlatList,
-  ScrollView,
-  
+  ScrollView,  
 } from 'react-native';
+import styles from './Style';
+
 import HerbsList from './components/HerbsList';
 import TopBar from './components/TopBar';
+import SideMenu from './components/SideMenu';
 
 export default class App extends React.Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      modalVisible : true
+    }
+  }
+  toggleMenu () {
+    console.log("works");
+    this.setState({
+    modalVisible: !this.state.modalVisible
+  })
+}
   render() {
     return (
       <View style={styles.container}>
-      <TopBar/>
+      <TopBar toggleMenu={this.toggleMenu.bind(this)} />
+
       <ScrollView>
-      <HerbsList/>
+        <HerbsList/>
       </ScrollView>
+      
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
-});
