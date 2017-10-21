@@ -39,10 +39,9 @@ export default class HerbsList extends React.Component {
         resizeMode='cover'
       >
       <FlatList
-        style={{height: 500}}
         data={this.state.herbsList}
         renderItem={({item, idx}) =>
-      <SingleHerbList {...item}/>
+      <SingleHerbList {...item} key={idx}/>
     }
     />
     </Image>

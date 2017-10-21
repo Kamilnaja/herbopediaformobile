@@ -39,12 +39,13 @@ export default StyleSheet.create({
     color: 'white'
   },
   modal : {
-    backgroundColor: 'tan',
+    backgroundColor: 'rgb(221, 177, 10)',
     position: 'absolute',
-    height: 300,
-    width: 200,
-    left: 30,
-    top: 0,
+    width: 300,
+    left: 0,
+    top: 80,
     bottom: 0,
+    paddingTop: 15,
+    paddingLeft: 15,
   }
 })

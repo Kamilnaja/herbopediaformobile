@@ -28,11 +28,14 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
       <TopBar toggleMenu={this.toggleMenu.bind(this)} />
-
       <ScrollView>
         <HerbsList/>
       </ScrollView>
-      
+      {
+        this.state.modalVisible && (
+          <SideMenu/>
+        )
+      }
       </View>
     );
   }
