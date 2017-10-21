@@ -4,20 +4,21 @@ import {
   Text, 
   View, 
   FlatList,
-  ScrollView
+  ScrollView,
+  
 } from 'react-native';
 import HerbsList from './components/HerbsList';
+import TopBar from './components/TopBar';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-      <Text>Herbopedia</Text>
+      <TopBar/>
       <ScrollView>
       <HerbsList/>
       </ScrollView>
       </View>
-      
     );
   }
 }
@@ -28,5 +29,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
+  }
 });
