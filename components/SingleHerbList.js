@@ -25,25 +25,26 @@ export default class SingleHerbList extends React.Component {
           key={this.props.id}
           style={styles.listElem}
         >
-        <Text 
-          style={styles.circle} 
-          key={this.props.id}
-        >
-        {this.props.id}
-        </Text>
-        <Text 
-          style={styles.textItem} 
-          key={this.props.textItem}
-          onPress={this.openItem.bind(this)}
-        >
-        {this.props.name}
-        </Text>
+          <Text 
+            style={styles.circle} 
+            key={this.props.id}
+          >
+          {this.props.id}
+          </Text>
+          <Text 
+            style={styles.textItem} 
+            key={this.props.textItem}
+            onPress={this.openItem.bind(this)}
+          >
+          {this.props.name}
+          </Text>
       </View>
       {
         this.state.isOpened && (
+          {/* A JSX comment */},
           <View style={styles.listElemMoreInfo}>
-              <Text style={styles.listElemMoreInfoText}>
-                {this.props.info} 
+          <Text style={styles.listElemMoreInfoText}>
+                {this.props.info}
               </Text>
           </View>
         )

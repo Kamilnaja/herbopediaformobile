@@ -31,6 +31,7 @@ export default class App extends React.Component {
       <ScrollView>
         <HerbsList/>
       </ScrollView>
+      
       {
         this.state.modalVisible && (
           <SideMenu/>

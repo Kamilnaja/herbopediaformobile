@@ -39,14 +39,13 @@ export default StyleSheet.create({
   
   listElem : {
     flexDirection: 'row',
-    display: 'flex',
     paddingLeft: 5,
     minHeight: 50,
     alignItems: 'center',
   },
 
   listElemMoreInfo : {
-    height: 50,
+    height: 70,
   },
   
   listElemMoreInfoText: {
@@ -54,7 +53,8 @@ export default StyleSheet.create({
     flexWrap: 'wrap',
     paddingLeft: 15,
     paddingRight: 15,
-    
+    minHeight: 170,
+    maxWidth: '57%'
     
   },
 
