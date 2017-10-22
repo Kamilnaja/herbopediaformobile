@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, TouchableHighlight} from 'react-native';
 import styles from '../Style';
 import ListElemMoreInfo from './ListElemMoreInfo';
 export default class SingleHerbList extends React.Component {
@@ -18,7 +18,6 @@ export default class SingleHerbList extends React.Component {
   
   render () {
     return (
-      
       <View 
         style={styles.listElemWrapper}
         >
@@ -32,6 +31,7 @@ export default class SingleHerbList extends React.Component {
           >
             {this.props.id}
           </Text>
+          <TouchableHighlight>
           <Text 
             style={styles.textItem} 
             key={this.props.textItem}
@@ -39,10 +39,14 @@ export default class SingleHerbList extends React.Component {
           >
           {this.props.name}
           </Text>
+          </TouchableHighlight>
       </View>
       {
         this.state.isOpened && (
-        <ListElemMoreInfo opened={this.state.isOpened} info={this.props.info}/>
+        <ListElemMoreInfo 
+          opened={this.state.isOpened} 
+          info={this.props.info}
+        />
     )
   }
       </View>

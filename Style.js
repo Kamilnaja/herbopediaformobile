@@ -50,6 +50,12 @@ export default StyleSheet.create({
     backgroundColor: 'rgba(221, 177, 10, 0.4)'
   },
   
+  listTitleText : {
+    paddingLeft: 15, 
+    color: "white", 
+    justifyContent: 'center'
+  },
+
   listElemMoreInfoText: {
     paddingLeft: 15,
     paddingRight: 15,
@@ -77,6 +83,7 @@ export default StyleSheet.create({
     
   },
   listTitleWrapper: {
-    backgroundColor: "rgba(0, 100, 10, 0.4)",
+    backgroundColor: "rgba(0, 100, 10, 0.7)",
+    paddingTop: 5
   }
 })

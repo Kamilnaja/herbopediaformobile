@@ -8,7 +8,7 @@ export default class listElemMoreInfo extends Component {
       <View style={styles.listElemMoreInfo}>
         <Text style={styles.listElemMoreInfoText}>
             {
-              !this.props.opened && (
+              !this.props.info && (
                 <Text>Nie mamy więcej informacji</Text>
               )
             }

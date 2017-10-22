@@ -34,15 +34,12 @@ export default class HerbsList extends React.Component {
   
   render() {
     return (
-      <View
-        source={require('../img/background.jpg')}
-        resizeMode='stretch'
-        style={{flex: 1}}
-      >
+      <View>
       <View style={styles.listTitleWrapper}>
-        <Text style={{paddingLeft: 15, color: "white"}}>
-          Lista ziół
+        <Text style={styles.listTitleText}>
+          Lista ziół 
         </Text>
+        <Text></Text>
       </View>
       <FlatList
         data={this.state.herbsList}
