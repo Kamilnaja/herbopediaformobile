@@ -42,16 +42,19 @@ export default StyleSheet.create({
     minHeight: 50,
     alignItems: 'center',
     justifyContent: 'flex-start',
+    backgroundColor: 'rgba(221, 177, 10, 0.3)'
   },
 
   listElemMoreInfo : {
-    height: 70,
+    minHeight: 70,
+    backgroundColor: 'rgba(221, 177, 10, 0.4)'
   },
   
   listElemMoreInfoText: {
     paddingLeft: 15,
     paddingRight: 15,
-    minHeight: 170,
+    paddingTop: 15,
+    paddingBottom: 15,
   },
 
   textItem : {

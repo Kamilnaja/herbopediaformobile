@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 import styles from '../Style';
-
+import ListElemMoreInfo from './ListElemMoreInfo';
 export default class SingleHerbList extends React.Component {
   constructor(props) {
     super();
@@ -40,16 +40,11 @@ export default class SingleHerbList extends React.Component {
           {this.props.name}
           </Text>
       </View>
-      
       {
         this.state.isOpened && (
-          <View style={styles.listElemMoreInfo}>
-            <Text style={styles.listElemMoreInfoText}>
-                {this.props.info}
-            </Text>
-          </View>
-        )
-      }
+        <ListElemMoreInfo opened={this.state.isOpened} info={this.props.info}/>
+    )
+  }
       </View>
     )
   }
