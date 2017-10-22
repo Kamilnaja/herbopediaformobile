@@ -18,6 +18,7 @@ export default class SingleHerbList extends React.Component {
   
   render () {
     return (
+      
       <View 
         style={styles.listElemWrapper}
         >
@@ -29,7 +30,7 @@ export default class SingleHerbList extends React.Component {
             style={styles.circle} 
             key={this.props.id}
           >
-          {this.props.id}
+            {this.props.id}
           </Text>
           <Text 
             style={styles.textItem} 
@@ -39,13 +40,13 @@ export default class SingleHerbList extends React.Component {
           {this.props.name}
           </Text>
       </View>
+      
       {
         this.state.isOpened && (
-          {/* A JSX comment */},
           <View style={styles.listElemMoreInfo}>
-          <Text style={styles.listElemMoreInfoText}>
+            <Text style={styles.listElemMoreInfoText}>
                 {this.props.info}
-              </Text>
+            </Text>
           </View>
         )
       }

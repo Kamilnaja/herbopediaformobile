@@ -4,8 +4,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+
   },
 
   topBar: {
@@ -42,6 +41,7 @@ export default StyleSheet.create({
     paddingLeft: 5,
     minHeight: 50,
     alignItems: 'center',
+    justifyContent: 'flex-start',
   },
 
   listElemMoreInfo : {
@@ -49,16 +49,15 @@ export default StyleSheet.create({
   },
   
   listElemMoreInfoText: {
-    color: 'black',
-    flexWrap: 'wrap',
     paddingLeft: 15,
     paddingRight: 15,
     minHeight: 170,
-    
   },
 
   textItem : {
-    color: 'green'
+    color: 'green',
+    paddingRight: 15,
+    textAlign: 'left'
   },
 
   modal : {
