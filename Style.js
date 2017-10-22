@@ -7,10 +7,10 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   topBar: {
     height: 80,
     backgroundColor: 'cornflowerblue',
-    width: 100,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'flex-end',
@@ -19,6 +19,7 @@ export default StyleSheet.create({
     paddingRight: 15,
     paddingBottom: 15
   },
+
   circle: {
     width: 30,
     height: 30,
@@ -30,18 +31,37 @@ export default StyleSheet.create({
     marginRight: 20,
     marginLeft: 10
   },
-  listElem: {
+
+  listElemWrapper: {
     borderBottomColor: 'green',
-    borderBottomWidth: 1,
+    borderBottomWidth: 1
+  },
+  
+  listElem : {
     flexDirection: 'row',
     display: 'flex',
     paddingLeft: 5,
-    height: 50,
+    minHeight: 50,
     alignItems: 'center',
   },
+
+  listElemMoreInfo : {
+    height: 50,
+  },
+  
+  listElemMoreInfoText: {
+    color: 'white',
+    flexWrap: 'wrap',
+    paddingLeft: 15,
+    paddingRight: 15,
+    
+    
+  },
+
   textItem : {
     color: 'white'
   },
+
   modal : {
     backgroundColor: 'rgb(221, 177, 10)',
     position: 'absolute',
@@ -57,6 +77,5 @@ export default StyleSheet.create({
   },
   listTitleWrapper: {
     backgroundColor: "rgba(0, 100, 10, 0.4)",
-    
   }
 })

@@ -19,7 +19,7 @@ export default class HerbsList extends React.Component {
     })
   }
   componentDidMount() {
-    fetch('http://192.168.50.1:3000/api/data')
+    fetch('http://192.168.50.1:8080/api/data')
     .then((response) => response.json())
     .then((responseJSON) => {
       this.setState({
