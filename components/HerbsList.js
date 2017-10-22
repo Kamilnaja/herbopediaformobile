@@ -34,9 +34,10 @@ export default class HerbsList extends React.Component {
   
   render() {
     return (
-      <Image
+      <View
         source={require('../img/background.jpg')}
-        resizeMode='cover'
+        resizeMode='stretch'
+        style={{flex: 1}}
       >
       <View style={styles.listTitleWrapper}>
         <Text style={{paddingLeft: 15, color: "white"}}>
@@ -49,7 +50,7 @@ export default class HerbsList extends React.Component {
       <SingleHerbList {...item} key={idx}/>
     }
     />
-    </Image>
+    </View>
   );
 }
 }

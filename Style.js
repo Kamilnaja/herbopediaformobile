@@ -49,17 +49,16 @@ export default StyleSheet.create({
   },
   
   listElemMoreInfoText: {
-    color: 'white',
+    color: 'black',
     flexWrap: 'wrap',
     paddingLeft: 15,
     paddingRight: 15,
     minHeight: 170,
-    maxWidth: '57%'
     
   },
 
   textItem : {
-    color: 'white'
+    color: 'green'
   },
 
   modal : {
